@@ -1,0 +1,206 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacticon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  gap: 10px;
+  left: 2rem;
+  z-index: 100;
+}
+
+.contactline {
+  width: 2px;
+  height: 8rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+}
+
+.home {
+  height: 100vh;
+  background: linear-gradient(to right, #000000 50%, #ffffff 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  padding: 2rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3 rem;
+  margin: 2rem;
+}
+
+.aboutme {
+  flex: 3;
+  color: #000;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.avatar {
+  flex: 4;
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  border: 2px solid #000;
+}
+
+.project {
+  padding: 2rem 2rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectcards {
+  padding: 2rem 2rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+.resume {
+  padding: 4rem 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeContainer {
+  width: 500px;
+  height: 800px;
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.downloadButton {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: #6a1b9a;
+}
+
+.box {
+  position: relative;
+  width: 65vw;
+  height: 55vh;
+  display: flex;
+  background: linear-gradient(to left, #000000 50%, #ffffff 50%) bottom,
+    linear-gradient(to left, #000000 50%, #ffffff 50%) top;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  border-right: 2px solid #000000;
+  border-left: 2px solid #ffffff;
+  z-index: 1;
+}
+
+.subBox {
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+
+.text {
+  font-size: calc(1em + 1.5vw);
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.text h6 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: calc(0.5rem + 1.5vw);
+  font-weight: 300;
+}
+
+.pic {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: auto;
+}
+
+.darkHeading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.lightHeading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column;
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .subBox {
+    width: 100%;
+    height: 50%;
+  }
+
+  .text {
+    padding: 1rem;
+  }
+
+  .desc p {
+    font-size: 0.9rem;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
+}
